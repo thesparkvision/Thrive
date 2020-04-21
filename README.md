@@ -22,18 +22,18 @@ This is a web application made using Python Flask framework. The application wil
 
 <h2>Project Plan</h2>
 
-Day One: Make a hello world app
-Day Two: Make another main page
-Day Three: Make a navigation bar
-Day Four:Make a footer
-Day Five:Learn database and add models to Flask app
-Day Six:Learn how to do CRUD operations on database using Flask
-Day Seven:Style the front page
-Day Eight:Style the main page
-Day Nine:Improve the page
-Day Ten:Make the header footer reusable
-Day Eleven:Do some more improvement
-Day Twelve:Deploy the app on Heroku
+Day One: Make a hello world app<br/>
+Day Two: Make another main page<br/>
+Day Three: Make a navigation bar<br/>
+Day Four:Make a footer<br/>
+Day Five:Learn database and add models to Flask app<br/>
+Day Six:Learn how to do CRUD operations on database using Flask<br/>
+Day Seven:Style the front page<br/>
+Day Eight:Style the main page<br/>
+Day Nine:Improve the page<br/>
+Day Ten:Make the header footer reusable<br/>
+Day Eleven:Do some more improvement<br/>
+Day Twelve:Deploy the app on Heroku<br/>
 
 <h2>My Experience</h2>
 
