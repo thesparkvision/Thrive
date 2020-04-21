@@ -7,8 +7,7 @@
 This is a web application useful for making todo lists to manage your productivity with add,update,delete options
 
 <h2>Project Link:</h2>
-
-https://github.com/thesparkvision/flaskintro
+http://todomasterapp.herokuapp.com/
 
 <h2>Brief Description:</h2>
 
