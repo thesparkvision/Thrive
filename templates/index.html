@@ -1,0 +1,38 @@
+{% include 'header.html' %}
+
+{% block head %}
+<title>Task Master</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+{% endblock %}
+<div class="content">
+    <h1 style="text-align:center;">Task Master</h1><br/>
+    <br/>
+    <form  style="text-align:center;" action="/todo" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+    <br/>
+    {% if tasks|length <1 %}
+        <h1 style="text-align:center;">There are no tasks created yet. Create one above</h1>
+    {% else %}
+        <table style="text-align:center;">
+            <tr>
+                <th style="text-align:center;"><h3>Task</h3></th>
+                <th style="text-align:center;"><h3>Added</h3></th>
+                <th style="text-align:center;"><h3>Actions</h3></th>
+            </tr>
+            {% for task in tasks %}
+                <tr>
+                    <td><h3>{{task.content}}</h3></td>
+                    <td><h3>{{task.date_created.date()}}</h3></td>
+                    <td>
+                        <h3><a href="/delete/{{task.id}}">Delete</a></h3>
+                        <h3><a href="/update/{{task.id}}">Update</a></h3>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <br/><br/>
+    {% endif %}
+</div>
+{% include "footer.html" %}

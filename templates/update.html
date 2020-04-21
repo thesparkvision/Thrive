@@ -1,0 +1,21 @@
+{% include 'header.html' %}
+
+{% block head %}
+<title>Update Task</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+{% endblock %}
+
+<div class="content">
+    <br/><br/>
+    <h1 style="text-align:center">Change of Plans?</h1>
+    <h1 style="text-align:center">Update your Task below</h1>
+    <br/>
+    <div class="form">
+        <form action="/update/{{task.id}}" method="POST">
+            <input style="height:50px;" type="text" name="content" id="content" value="{{task.content}}">
+            <input type="submit" style="height:50px; width:100px;" value="Update Task">
+        </form>
+    </div>
+</div>
+{% include "footer.html" %}
+
