@@ -1,5 +1,4 @@
 # Flask todo app
-<h3>Author - Aman Pandya</h3>
 
 <h2>Project Idea:</h2>
 
